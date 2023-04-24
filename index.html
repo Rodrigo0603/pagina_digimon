@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Requerimientos tag head -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../pc2/assets/img/icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Archivo CSS -->
+    <link rel="stylesheet" href="../pc2/assets/css/style.css">
+
+    <!-- Titulo -->
+    <title>Tú Digimon</title>
+</head>
+
+<body>
+
+    <!-- barra de navegación -->
+    <nav class="navbar navbar-expand-lg bg-body-primary" id="barranav">
+        <div class="container">
+            <a class="navbar-brand" href="#formulario">Tu Digimon</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#historia">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#vermas">Ver más</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Imagen presentación -->
+    <div class="container" id="presentacion">
+        <div class="row">
+            <img src="../pc2/assets/img/digimon.png" alt="">
+        </div>
+    </div>
+
+    <!-- Introducción -->
+    <div class="container text-center" id="historia">
+        <h1>Historia</h1>
+        <P> En un mundo paralelo conocido como Mundo Digital, que está habitado por unas criaturas ficticias llamadas
+            Digimon. Son formas de vida artificial creadas a partir de bits y piezas perdidas de datos de ordenadores,
+            que habitan dentro de los aparatos electrónicos que posean memorias no volátiles. Los Digimon son criados
+            por humanos llamados "Tamers" para combatir a los villanos que amenazan con destruir el equilibrio del Mundo
+            Digital.</P>
+    </div>
+
+    <h2> Encuentra tu Digimon</h2>
+
+    <!-- Formulario de búsqueda -->
+    <form class="row g-2 justify-content-center" id="formulario">
+        <div class="col-auto">
+            <label for="DigiName" class="visually-hidden"></label>
+            <input type="text" class="form-control" id="DigiName" placeholder="Nombre Digimon">
+        </div>
+        <div class="col-auto">
+            <button type="button" class="btn btn-danger mb-3" onclick="buscarDigimon()">Buscar</button>
+        </div>
+    </form>
+
+    <!-- tarjeta principal -->
+    <div class="container">
+        <div class="row card-title justify-content-center">
+            <div class="card bg-warning border-dark" style="width: 18rem;">
+                <img src="../pc2/assets/img/icon.png" id="img1" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center" id="nameprin">Nombre</h5>
+                    <h5 class="card-title text-center" id="levelprin">Nivel</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Boton para obtener el listado completo de digimons -->
+    <h2>Ve el listado completo</h2>
+    <div class="col-auto text-center">
+        <button type="button" class="btn btn-danger mb-3" id="vermas" onclick="tarjetasDigimon()">Ver
+            mas</button>
+    </div>
+
+    <!-- Tarjetas de Digimons con el script-->
+    <div class="container" id="digimoncontainer"></div>
+
+    <!-- Fin de pagina -->
+    <footer>
+        <div>
+            <strong>Todos los Derechos Reservados</strong>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Script JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!-- Archivo JS -->
+    <script src="../pc2/assets/js/script.js"></script>
+</body>
+
+</html>
